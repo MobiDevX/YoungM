@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileActivity"
+    android:background="@color/mainColor">
+
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayoutProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <fragment
+                        android:id="@+id/topBar"
+                        android:name="com.example.youngm.Fragment.ProfilePage.ProfileTopBarFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout="@layout/fragment_profile_top_bar" />
+
+
+                    <fragment
+                        android:id="@+id/profileDescription"
+                        android:name="com.example.youngm.Fragment.ProfilePage.ProfileDescriptionFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/topBar"
+                        tools:layout="@layout/fragment_profile_description" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="200dp"
+                        android:src="@mipmap/default_profile_image"
+                        app:layout_constraintBottom_toBottomOf="@id/topBar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/topBar"
+
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+        <fragment
+            android:id="@+id/profileFeed"
+            android:name="com.example.youngm.Fragment.ProfilePage.ProfileFeedFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            tools:layout="@layout/fragment_profile_feed"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

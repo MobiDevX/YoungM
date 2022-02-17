@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.OpenPost.OpenPostDescriptionFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/openPostDescriptionLayout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/postOpenLikeLayout"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/openPostImageLike"
+                android:layout_width="28dp"
+                android:layout_height="28sp"
+                android:src="@drawable/white_like"/>
+
+            <TextView
+                android:id="@+id/openPostLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_count_value"
+                android:theme="@style/SecondaryTextTheme"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/openPostUserProfileLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="80sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/openPostUsernameAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MainTextTheme"
+                android:textSize="18sp"
+                android:layout_marginEnd="10sp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/openPostProfileImage"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:src="@mipmap/default_profile_image_round"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDescriptionOpenPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/postOpenLikeLayout"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerOpenPostMusic"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutDescriptionOpenPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            tools:listitem="@layout/open_post_music_item"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerOpenPostMusic"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginLeft="15sp">
+
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

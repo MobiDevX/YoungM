@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/musicListLinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10sp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/openPostPlayer"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:src="@drawable/white_play"
+        android:padding="5sp"/>
+
+    <LinearLayout
+        app:layout_constraintStart_toEndOf="@+id/openPostPlayer"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/openPostMusicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MainTextTheme"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/openPostMusicAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:theme="@style/SecondaryTextTheme"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/openPostMusicTime"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:text="00:00"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:theme="@style/SecondaryTextTheme"/>
+
+</LinearLayout>

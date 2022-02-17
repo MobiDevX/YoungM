@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">YoungM</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="profile_edit">Edit</string>
+    <string name="hint_email">Почта</string>
+    <string name="hint_login">Логин</string>
+    <string name="hint_password">Пароль</string>
+    <string name="btn_sign_in">Войти</string>
+    <string name="btn_sign_up">Регистрация</string>
+    <string name="hint_first_name">Имя</string>
+    <string name="hint_last_name">Фамилия</string>
+    <string name="hint_confirm_password">Повторите пароль</string>
+    <string name="btn_next">Дальше</string>
+    <string name="btn_finish">Завершить</string>
+    <string name="btn_choose_image">Изменить картинку</string>
+    <string name="hint_location">Место проживания(Город, Страна)</string>
+    <string name="btn_choose_category">Выберете любимый жанр</string>
+    <string name="hint_about_me">Обо мне</string>
+    <string name="no_posts">У этого пользователя нет постов</string>
+    <string name="no_liked_posts">У этого пользователя нет понравившихся постов</string>
+    <string name="header_comment">Комментарии:</string>
+    <string name="default_count_value">0</string>
+    <string name="btn_subscribe">Подписаться</string>
+    <string name="btn_unsubscirbe">Отписаться</string>
+    <string name="btn_edit">Изменить</string>
+    <string name="btn_send">Написать</string>
+    <string name="btn_logout">Выйти</string>
+    <string name="header_gengre">Жанр</string>
+    <string name="header_following">Подписки</string>
+    <string name="header_posts">Посты</string>
+    <string name="header_followers">Подписчики</string>
+    <string name="header_name">Имя</string>
+    <string name="header_location">Локация</string>
+    <string name="header_popular">Популярное</string>
+    <string name="header_recommend">Рекомендуем</string>
+    <string name="header_recent">Последнее</string>
+    <string name="header_favourite">Понравившиеся</string>
+    <string name="hint_enter_comment">Комментарий</string>
+    <string name="btn_create_post">Добавить пост</string>
+    <string name="hint_add_photo">Добавить фото</string>
+    <string name="btn_add_music">Добавить музыку</string>
+    <string name="hint_description">Описание</string>
+    <string name="warning_create_post_photo">Добавьте фотографию к посту</string>
+    <string name="warning_create_post_music">Добавьте минимум одну аудиозапись</string>
+    <string name="warning_create_post_genre">Выберете жанр музыки</string>
+    <string name="comment_update">Изменить</string>
+    <string name="comment_delete">Удалить</string>
+    <string name="comment_report">Пожаловаться</string>
+    <string name="btn_cancel">Отменить</string>
+    <string name="text_theme_profile">Тема профиля:</string>
+    <string name="close_liked_post">Пользователь закрыл доступ</string>
+    <string name="text_who_can_see_favourite">Кто может видеть понравившиеся записи</string>
+    <string name="rbtn_just_me">Только я</string>
+    <string name="rbtn_all_users">Все пользователи</string>
+    <string name="title_post">Пост</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

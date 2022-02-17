@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">YoungM</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="profile_edit">Edit</string>
+    <string name="hint_login">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="btn_sign_up">Sign up</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_finish">Finish</string>
+    <string name="btn_choose_image">Choose image</string>
+    <string name="hint_location">Location(City, Country)</string>
+    <string name="btn_choose_category">Choose favorite genre</string>
+    <string name="hint_about_me">About me</string>
+    <string name="no_posts">This user has no posts</string>
+    <string name="no_liked_posts">This user does not have liked posts</string>
+    <string name="header_comment">Comments:</string>
+    <string name="default_count_value">0</string>
+    <string name="btn_subscribe">Subscribe</string>
+    <string name="btn_unsubscirbe">Unsubscribe</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_logout">Logout</string>
+    <string name="header_gengre">Genre</string>
+    <string name="header_following">Following</string>
+    <string name="header_posts">Posts</string>
+    <string name="header_followers">Followers</string>
+    <string name="header_name">Name</string>
+    <string name="header_location">Location</string>
+    <string name="header_popular">Popular</string>
+    <string name="header_recommend">Recommend</string>
+    <string name="header_recent">Recent</string>
+    <string name="header_favourite">Favourite</string>
+    <string name="hint_enter_comment">Comment</string>
+    <string name="btn_create_post">Add post</string>
+    <string name="hint_add_photo">Add photo</string>
+    <string name="btn_add_music">Add music</string>
+    <string name="hint_description">Description</string>
+    <string name="warning_create_post_photo">Add a photo to the post</string>
+    <string name="warning_create_post_music">Add at least one audio recording</string>
+    <string name="warning_create_post_genre">Choose a genre of music</string>
+    <string name="comment_update">Edit</string>
+    <string name="comment_delete">Delete</string>
+    <string name="comment_report">Report</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="text_theme_profile">Profile theme:</string>
+    <string name="close_liked_post">The user is denied access</string>
+    <string name="text_who_can_see_favourite">Who can see your favorite posts</string>
+    <string name="rbtn_just_me">Just me</string>
+    <string name="rbtn_all_users">All users</string>
+    <string name="title_post">Post</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

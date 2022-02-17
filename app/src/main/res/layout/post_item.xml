@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/postItemCard"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/cardColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/musicCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:theme="@style/SecondaryTextTheme"
+            android:textSize="16sp"
+            android:text="Rock"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/postUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/postUserPhoto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="10dp"
+            android:theme="@style/SecondaryTextTheme"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/postUserPhoto"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/default_profile_image_round"
+            android:scaleType="centerCrop"
+            android:padding="5dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:civ_border_color="@color/mainColor"
+            app:civ_border_width="1dp"
+            app:layout_constraintDimensionRatio="1:1"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardMedium"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        app:layout_constraintTop_toBottomOf="@id/cardTop"
+        android:background="@color/mainColor">
+
+        <ImageView
+            android:id="@+id/postPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/whitecube"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardBottom"
+        app:layout_constraintTop_toBottomOf="@id/cardMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/likeLayout"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <ImageView
+                android:id="@+id/imageLike"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:src="@drawable/white_like"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_count_value"
+                android:theme="@style/SecondaryTextTheme"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/commentLayout"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            app:layout_constraintStart_toEndOf="@id/likeLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical"
+            android:padding="10sp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageComment"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:src="@drawable/white_comment"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/commentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_count_value"
+                android:theme="@style/SecondaryTextTheme"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/playerLayout"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imagePlay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/white_play"
+                android:layout_weight="1"
+                android:padding="15sp"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

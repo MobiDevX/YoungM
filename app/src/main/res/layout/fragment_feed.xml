@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Navigation.FeedFragment">
+
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutSliders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/textColor"
+            app:tabIndicatorHeight="4sp"
+            app:tabTextAppearance="@style/TabLayoutTextSize"
+            app:tabSelectedTextColor="@color/cardWhite"
+            app:tabTextColor="@color/textColor"
+            android:theme="@style/MainTextTheme"
+            android:background="@color/mainColor"
+            />
+
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerSliders"
+            android:background="@color/mainColor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+
+        <!--        <fragment-->
+        <!--            android:id="@+id/bottomPlayer"-->
+        <!--            android:visibility="invisible"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="40sp"-->
+        <!--            android:name="com.example.youngm.Fragment.BottomPlayerFragment"-->
+        <!--            tools:layout="@layout/fragment_bottom_player"-->
+        <!--            />-->
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

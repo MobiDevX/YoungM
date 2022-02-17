@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity"
+    android:background="@color/mainColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YoungM"
+            android:textSize="30sp"
+            android:theme="@style/ToolbarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+        <EditText
+            android:id="@+id/textLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/hint_login"
+            android:theme="@style/SecondaryTextTheme"
+            android:textColor="@color/cardWhite"
+            android:textSize="24sp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/hint_password"
+            android:theme="@style/SecondaryTextTheme"
+            android:textColor="@color/cardWhite"
+            android:textSize="24sp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_marginStart="10sp"
+                android:text="@string/btn_sign_up"
+                android:theme="@style/LightButtonsTheme"/>
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:text="@string/btn_sign_in"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_marginEnd="10sp"
+                android:theme="@style/LightButtonsTheme"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

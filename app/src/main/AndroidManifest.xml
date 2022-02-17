@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.youngm">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <application
+        android:name=".App.ArchLifecycleApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Fragment.Navigation.SearchFragment" />
+        <activity android:name=".Fragment.Navigation.MessageFragment" />
+        <activity android:name=".Activity.OpenPhotoActivity" />
+        <activity android:name=".Activity.EditProfileActivity" />
+        <activity android:name=".Activity.CreatePostActivity" />
+
+        <service
+            android:name=".Service.PlayService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".Service.NotificationActionService">
+            <intent-filter>
+                <action android:name="com.example.app.ACTION_PLAY" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.OpenPostActivity"
+            android:label=""
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activity.RegistrationActivityStep2" />
+        <activity android:name=".Activity.RegistrationActivity" />
+        <activity
+            android:name=".Activity.FollowActivity"
+            android:label="" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Fragment.Navigation.FeedFragment">
+        </activity>
+    </application>
+
+</manifest>

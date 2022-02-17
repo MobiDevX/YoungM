@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CreatePostActivity"
+    android:background="@color/mainColor">
+
+
+    <ScrollView
+        android:id="@+id/createPostScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/createPostAddPhotoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/light_border"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginTop="5sp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/addPhotoImageLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="15sp"
+                    android:background="@color/mainColor"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/addPhotoImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250sp"
+                        android:scaleType="fitXY"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/addPhotoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:visibility="visible"
+                    android:textSize="15sp"
+                    android:text="@string/hint_add_photo"
+                    android:theme="@style/MainTextTheme"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp">
+
+                <Button
+                    android:id="@+id/btnAddMusic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/light_border"
+                    android:text="@string/btn_add_music"
+                    android:theme="@style/MainTextTheme"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerMusicList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15sp"
+                    tools:listitem="@layout/open_post_music_item"
+                    tools:itemCount="1"/>
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/createPostDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginStart="15sp"
+                android:hint="@string/hint_description"
+                android:gravity="center"
+                android:theme="@style/SecondaryTextTheme"
+                android:textColor="@color/cardWhite"/>
+
+
+            <AutoCompleteTextView
+                android:id="@+id/createPostGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/header_gengre"
+                android:gravity="center"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:theme="@style/SecondaryTextTheme"
+                android:textColor="@color/cardWhite"
+                android:completionThreshold="0"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCreatePost"
+        android:layout_marginTop="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/LightButtonsTheme"
+        android:layout_marginBottom="15sp"
+        android:text="@string/btn_create_post"
+        app:layout_constraintBottom_toBottomOf="@id/createPostScrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_weight="1"
+        android:textAllCaps="false"/>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
